@@ -1,20 +1,20 @@
-abstract class Sides {
+abstract class Shape {
 	abstract void numberOfSides();
 }
 
-class Triangle extends Sides {
+class Triangle extends Shape {
 	void numberOfSides() {
 		System.out.println("No of sides of Triangle: 3");
 	}
 }
 
-class Rectangle extends Sides {
+class Rectangle extends Shape {
 	void numberOfSides() {
 		System.out.println("No of sides of Rectangle: 4");
 	}
 }
 
-class Hexagon extends Sides {
+class Hexagon extends Shape {
 	void numberOfSides() {
 		System.out.println("No of sides of Hexagon: 6");
 	}
