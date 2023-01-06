@@ -10,7 +10,7 @@ import javax.swing.*;
 // Main class
 // Extending JFrame class and
 // Implementing ItemListener interface
-public class sample
+public class trafficlights
 	extends JFrame implements ItemListener {
 
 	// Setting the buttons for the layout
@@ -25,7 +25,7 @@ public class sample
 
 	// Initially setting the co-ordinates to 0,0,0
 	int x = 0, y = 0, z = 0;
-	public sample(String msg)
+	public trafficlights(String msg)
 	{
 		super(msg);
 		setLayout(new FlowLayout());
@@ -164,7 +164,7 @@ public class sample
 	{
 		// Creating object of Jframe class inside main()
 		// method
-		JFrame jf = new sample("Traffic Light");
+		JFrame jf = new trafficlights("Traffic Light");
 
 		// Setting size and making traffic signal
 		// operational using setVisible() method

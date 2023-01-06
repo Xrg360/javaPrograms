@@ -13,6 +13,7 @@ public class files {
 			FileWriter fw = new FileWriter("hello2.txt");
 			String s;
  
+			fw.flush();
 			while ((s = br.readLine()) != null) { // read a line
 				fw.write(s); // write to output file
 				fw.flush();
