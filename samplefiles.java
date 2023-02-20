@@ -7,9 +7,6 @@ import java.io.IOException;
 import java.nio.Buffer;
 import java.util.Scanner;
 
-import javax.print.event.PrintEvent;
-import javax.sound.midi.Soundbank;
-
 public class samplefiles {
     public static void main(String args[]) {
         try {
