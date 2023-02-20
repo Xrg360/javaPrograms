@@ -12,9 +12,10 @@ class Rabbit extends Thread {
             distance = distance + r_dist;
             System.out.println("Rabbit : " + distance);
             try {
+                Thread.sleep(1000);
                 if (distance == 100) {
-                    //rabit would win the race if he sleeps for less than 3 milliseconds
-                    Thread.sleep(1000);
+                    //rabit (resting time)
+                    Thread.sleep(22000);
                 }
 
                 if (distance == 200) {
@@ -45,6 +46,11 @@ class Tortoise extends Thread {
         while (distance < 200) {
             distance = distance + t_dist;
             System.out.println("Tortoise : " + distance);
+            try{
+                Thread.sleep(1000);
+            } catch(InterruptedException e){
+                System.out.println(e);
+            }
             if (distance == 200) {
                 System.out.println(Thread.currentThread().getName() + " won the match");
             }
